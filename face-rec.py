@@ -1,3 +1,5 @@
+#Rudraksh Charhate
+
 import face_recognition
 import cv2
 import numpy
@@ -6,11 +8,11 @@ from datetime import datetime
 
 video_capture = cv2.VideoCapture(0)
 
-rud_image = face_recognition.load_image_file("D:\python codes\Projects\Facerecognition\Faces\rudraksh.jpg")
+rud_image = face_recognition.load_image_file(r"D:\python codes\Projects\Facerecognition\Faces\rudraksh.jpg")
 rud_encoding = face_recognition.face_encodings(rud_image)[0]
-kinchu_image = face_recognition.load_image_file("D:\python codes\Projects\Facerecognition\Faces\kanchan.jpg")
+kinchu_image = face_recognition.load_image_file(r"D:\python codes\Projects\Facerecognition\Faces\kanchan.jpg")
 kinchu_encoding = face_recognition.face_encodings(kinchu_image)[0]
-manya_image = face_recognition.load_image_file("D:\python codes\Projects\Facerecognition\Faces\manaswi.jpg")
+manya_image = face_recognition.load_image_file(r"D:\python codes\Projects\Facerecognition\Faces\manaswi.jpg")
 manya_encoding = face_recognition.face_encodings(manya_image)[0]
 
 known_face_encodings = [rud_image, kinchu_encoding, manya_encoding]
